@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- David Cui B00788648 Nov 2018 -->
+
+<resources>
+    <string name="app_name">Current Weather</string>
+
+    <string name="lbl_enter_city">Enter City Name: </string>
+    <string name="hint_enter_city">e.g. Halifax</string>
+
+    <string name="btn_get_weather">Get Current Weather</string>
+
+    <!-- Format strings with degree Celsius symbol -->
+    <string name="txt_temp">%1$s\u2103</string>
+    <string name="txt_min_temp">Min. %1$s\u2103</string>
+    <string name="txt_max_temp">Max. %1$s\u2103</string>
+
+    <!-- Format strings with % symbol and new line before label -->
+    <string name="txt_humidity">%1$s%%\nHumidity</string>
+    <string name="txt_clouds">%1$s%%\nClouds</string>
+
+    <string name="error_message">City Not Found or Network Error</string>
+
+</resources>

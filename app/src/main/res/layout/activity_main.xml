@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- David Cui B00788648 Nov 2018 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".MainActivity">
+
+    <!-- label for edit text -->
+
+    <TextView
+        android:id="@+id/lblEnterCity"
+        android:labelFor="@id/etEnterCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="@string/lbl_enter_city"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"/>
+
+    <!-- user input city name -->
+
+    <EditText
+        android:id="@+id/etEnterCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lblEnterCity"
+        android:inputType="text"
+        android:hint="@string/hint_enter_city"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"/>
+
+    <!-- user click button to get weather -->
+
+    <Button
+        android:id="@+id/btnGetWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etEnterCity"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_get_weather"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimaryDark"/>
+
+    <!-- display city name got from API -->
+
+    <TextView
+        android:id="@+id/txtCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGetWeather"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+
+    <!--  display country name got from API  -->
+
+    <TextView
+        android:id="@+id/txtCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCityName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"/>
+
+    <!--  display temperature got from API  -->
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCountryName"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="52sp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutMinMaxTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTemperature"
+        android:orientation="horizontal">
+
+        <!--  display min temp got from API  -->
+
+        <TextView
+            android:id="@+id/txtMinTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"/>
+
+        <!-- display max temp got from API  -->
+
+        <TextView
+            android:id="@+id/txtMaxTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+    <!-- display weather got from API -->
+
+    <TextView
+        android:id="@+id/txtWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutMinMaxTemp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"/>
+
+    <!-- display weather description got from API -->
+
+    <TextView
+        android:id="@+id/txtWeatherDescrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWeather"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:id="@+id/layoutTxtHumidityClouds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWeatherDescrip"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <!-- display humidity got from API -->
+
+        <TextView
+            android:id="@+id/txtHumidity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"/>
+
+        <!-- display clouds got from API -->
+
+        <TextView
+            android:id="@+id/txtClouds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

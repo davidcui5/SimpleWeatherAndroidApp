@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- David Cui B00788648 Nov 2018 -->
+
+<resources>
+    <!-- primary color is Blue, secondary (accent) color is Yellow -->
+    <color name="colorPrimaryLight">#E3F2FD</color>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#FFAB00</color>
+
+    <!-- color for text -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <!-- color for error -->
+    <color name="colorRedError">#B00020</color>
+
+    <!-- color for cold, comfy, and hot temperature -->
+    <color name="colorBlueCold">#01579B</color>
+    <color name="colorGreenComfy">#1B5E20</color>
+    <color name="colorRedHot">#B71C1C</color>
+
+</resources>
